@@ -36,6 +36,11 @@
         "squizlabs/php_codesniffer": "^3.5",
         "phpmd/phpmd": "^2.8"
     },
+    "extra": {
+        "laminas": {
+            "component": "Riddlestone\\Brokkr\\Foundation6"
+        }
+    },
     "scripts": {
         "test": [
             "phpcs --standard=PSR12 src test",

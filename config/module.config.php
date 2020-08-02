@@ -19,6 +19,7 @@ return [
     'service_manager' => [
         'factories' => [
             Command\Foundation::class => Command\FoundationFactory::class,
+            Service\FoundationConfig::class => Service\FoundationConfigFactory::class,
         ],
     ],
     'foundation' => [
