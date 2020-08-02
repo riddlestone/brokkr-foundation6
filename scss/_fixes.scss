@@ -1,0 +1,6 @@
+// Magellan applies .is-active to the a element, but menu item active styling is only for li.is-active > a
+@mixin menu-fix {
+  .menu a.is-active {
+    @include menu-state-active;
+  }
+}

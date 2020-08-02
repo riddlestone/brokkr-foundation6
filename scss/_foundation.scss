@@ -1,0 +1,189 @@
+// Global styles
+@import '../../../vendor/zurb/foundation/scss/global';
+@import '../../../vendor/zurb/foundation/scss/forms/forms';
+@import '../../../vendor/zurb/foundation/scss/typography/typography';
+
+// Grids
+@import '../../../vendor/zurb/foundation/scss/grid/grid';
+@import '../../../vendor/zurb/foundation/scss/grid/flex-grid';
+@import '../../../vendor/zurb/foundation/scss/xy-grid/xy-grid';
+
+// Generic components
+@import '../../../vendor/zurb/foundation/scss/components/button';
+@import '../../../vendor/zurb/foundation/scss/components/button-group';
+@import '../../../vendor/zurb/foundation/scss/components/close-button';
+@import '../../../vendor/zurb/foundation/scss/components/label';
+@import '../../../vendor/zurb/foundation/scss/components/progress-bar';
+@import '../../../vendor/zurb/foundation/scss/components/slider';
+@import '../../../vendor/zurb/foundation/scss/components/switch';
+@import '../../../vendor/zurb/foundation/scss/components/table';
+// Basic components
+@import '../../../vendor/zurb/foundation/scss/components/badge';
+@import '../../../vendor/zurb/foundation/scss/components/breadcrumbs';
+@import '../../../vendor/zurb/foundation/scss/components/callout';
+@import '../../../vendor/zurb/foundation/scss/components/card';
+@import '../../../vendor/zurb/foundation/scss/components/dropdown';
+@import '../../../vendor/zurb/foundation/scss/components/pagination';
+@import '../../../vendor/zurb/foundation/scss/components/tooltip';
+
+// Containers
+@import '../../../vendor/zurb/foundation/scss/components/accordion';
+@import '../../../vendor/zurb/foundation/scss/components/media-object';
+@import '../../../vendor/zurb/foundation/scss/components/orbit';
+@import '../../../vendor/zurb/foundation/scss/components/responsive-embed';
+@import '../../../vendor/zurb/foundation/scss/components/tabs';
+@import '../../../vendor/zurb/foundation/scss/components/thumbnail';
+// Menu-based containers
+@import '../../../vendor/zurb/foundation/scss/components/menu';
+@import '../../../vendor/zurb/foundation/scss/components/menu-icon';
+@import '../../../vendor/zurb/foundation/scss/components/accordion-menu';
+@import '../../../vendor/zurb/foundation/scss/components/drilldown';
+@import '../../../vendor/zurb/foundation/scss/components/dropdown-menu';
+
+// Layout components
+@import '../../../vendor/zurb/foundation/scss/components/off-canvas';
+@import '../../../vendor/zurb/foundation/scss/components/reveal';
+@import '../../../vendor/zurb/foundation/scss/components/sticky';
+@import '../../../vendor/zurb/foundation/scss/components/title-bar';
+@import '../../../vendor/zurb/foundation/scss/components/top-bar';
+
+// Helpers
+@import '../../../vendor/zurb/foundation/scss/components/float';
+@import '../../../vendor/zurb/foundation/scss/components/flex';
+@import '../../../vendor/zurb/foundation/scss/components/visibility';
+@import '../../../vendor/zurb/foundation/scss/prototype/prototype';
+
+// Fixes to vanilla Foundation
+@import './fixes';
+
+@include foundation-global-styles;
+@if $foundation-forms {
+  @include foundation-forms;
+}
+@include foundation-typography;
+
+@if $foundation-grid-float {
+  @include foundation-grid;
+}
+@if $foundation-grid-flex {
+  @include foundation-flex-grid;
+}
+@if $foundation-grid-xy {
+  @include foundation-xy-grid-classes;
+}
+
+// Generic components
+@if $foundation-button {
+  @include foundation-button;
+}
+@if $foundation-button-group {
+  @include foundation-button-group;
+}
+@if $foundation-close-button {
+  @include foundation-close-button;
+}
+@if $foundation-label {
+  @include foundation-label;
+}
+@if $foundation-progress-bar {
+  @include foundation-progress-bar;
+}
+@if $foundation-slider {
+  @include foundation-slider;
+}
+@if $foundation-switch {
+  @include foundation-switch;
+}
+@if $foundation-table {
+  @include foundation-table;
+}
+// Basic components
+@if $foundation-badge {
+  @include foundation-badge;
+}
+@if $foundation-breadcrumbs {
+  @include foundation-breadcrumbs;
+}
+@if $foundation-callout {
+  @include foundation-callout;
+}
+@if $foundation-card {
+  @include foundation-card;
+}
+@if $foundation-dropdown {
+  @include foundation-dropdown;
+}
+@if $foundation-pagination {
+  @include foundation-pagination;
+}
+@if $foundation-tooltip {
+  @include foundation-tooltip;
+}
+
+// Containers
+@if $foundation-accordion {
+  @include foundation-accordion;
+}
+@if $foundation-media-object {
+  @include foundation-media-object;
+}
+@if $foundation-orbit {
+  @include foundation-orbit;
+}
+@if $foundation-responsive-embed {
+  @include foundation-responsive-embed;
+}
+@if $foundation-tabs {
+  @include foundation-tabs;
+}
+@if $foundation-thumbnail {
+  @include foundation-thumbnail;
+}
+// Menu-based containers
+@if $foundation-menu {
+  @include foundation-menu;
+  @include menu-fix;
+}
+@if $foundation-menu-icon {
+  @include foundation-menu-icon;
+}
+@if $foundation-accordion-menu {
+  @include foundation-accordion-menu;
+}
+@if $foundation-drilldown-menu {
+  @include foundation-drilldown-menu;
+}
+@if $foundation-dropdown-menu {
+  @include foundation-dropdown-menu;
+}
+
+// Layout components
+@if $foundation-off-canvas {
+  @include foundation-off-canvas;
+}
+@if $foundation-reveal {
+  @include foundation-reveal;
+}
+@if $foundation-sticky {
+  @include foundation-sticky;
+}
+@if $foundation-title-bar {
+  @include foundation-title-bar;
+}
+@if $foundation-top-bar {
+  @include foundation-top-bar;
+}
+
+// Helpers
+@if $foundation-float-classes {
+  @include foundation-float-classes;
+}
+@if $foundation-flex-classes {
+  @include foundation-flex-classes;
+}
+@if $foundation-visibility-classes {
+  @include foundation-visibility-classes;
+}
+@if $foundation-prototype-classes {
+  @include foundation-prototype-classes;
+}
