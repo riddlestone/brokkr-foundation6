@@ -22,6 +22,18 @@ return [
             Service\FoundationConfig::class => Service\FoundationConfigFactory::class,
         ],
     ],
+    'view_helpers' => [
+        'aliases' => [
+            'formbutton' => View\Helper\FormButton::class,
+            'form_button' => View\Helper\FormButton::class,
+            'formButton' => View\Helper\FormButton::class,
+            'FormButton' => View\Helper\FormButton::class,
+            'formsubmit' => View\Helper\FormSubmit::class,
+            'form_submit' => View\Helper\FormSubmit::class,
+            'formSubmit' => View\Helper\FormSubmit::class,
+            'FormSubmit' => View\Helper\FormSubmit::class,
+        ],
+    ],
     'foundation' => [
         'enabled' => false,
         'foundation_path' => 'vendor/zurb/foundation',
