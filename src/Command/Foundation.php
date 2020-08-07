@@ -102,6 +102,7 @@ class Foundation extends Command
         foreach ($this->getPortalManager()->getPortalNames() as $portalName) {
             $this->createPortalFiles($portalName);
         }
+        return 0;
     }
 
     /**
