@@ -1,57 +1,57 @@
 // Global styles
-@import '../../../vendor/zurb/foundation/scss/global';
-@import '../../../vendor/zurb/foundation/scss/forms/forms';
-@import '../../../vendor/zurb/foundation/scss/typography/typography';
+@import 'vendor/zurb/foundation/scss/global';
+@import 'vendor/zurb/foundation/scss/forms/forms';
+@import 'vendor/zurb/foundation/scss/typography/typography';
 
 // Grids
-@import '../../../vendor/zurb/foundation/scss/grid/grid';
-@import '../../../vendor/zurb/foundation/scss/grid/flex-grid';
-@import '../../../vendor/zurb/foundation/scss/xy-grid/xy-grid';
+@import 'vendor/zurb/foundation/scss/grid/grid';
+@import 'vendor/zurb/foundation/scss/grid/flex-grid';
+@import 'vendor/zurb/foundation/scss/xy-grid/xy-grid';
 
 // Generic components
-@import '../../../vendor/zurb/foundation/scss/components/button';
-@import '../../../vendor/zurb/foundation/scss/components/button-group';
-@import '../../../vendor/zurb/foundation/scss/components/close-button';
-@import '../../../vendor/zurb/foundation/scss/components/label';
-@import '../../../vendor/zurb/foundation/scss/components/progress-bar';
-@import '../../../vendor/zurb/foundation/scss/components/slider';
-@import '../../../vendor/zurb/foundation/scss/components/switch';
-@import '../../../vendor/zurb/foundation/scss/components/table';
+@import 'vendor/zurb/foundation/scss/components/button';
+@import 'vendor/zurb/foundation/scss/components/button-group';
+@import 'vendor/zurb/foundation/scss/components/close-button';
+@import 'vendor/zurb/foundation/scss/components/label';
+@import 'vendor/zurb/foundation/scss/components/progress-bar';
+@import 'vendor/zurb/foundation/scss/components/slider';
+@import 'vendor/zurb/foundation/scss/components/switch';
+@import 'vendor/zurb/foundation/scss/components/table';
 // Basic components
-@import '../../../vendor/zurb/foundation/scss/components/badge';
-@import '../../../vendor/zurb/foundation/scss/components/breadcrumbs';
-@import '../../../vendor/zurb/foundation/scss/components/callout';
-@import '../../../vendor/zurb/foundation/scss/components/card';
-@import '../../../vendor/zurb/foundation/scss/components/dropdown';
-@import '../../../vendor/zurb/foundation/scss/components/pagination';
-@import '../../../vendor/zurb/foundation/scss/components/tooltip';
+@import 'vendor/zurb/foundation/scss/components/badge';
+@import 'vendor/zurb/foundation/scss/components/breadcrumbs';
+@import 'vendor/zurb/foundation/scss/components/callout';
+@import 'vendor/zurb/foundation/scss/components/card';
+@import 'vendor/zurb/foundation/scss/components/dropdown';
+@import 'vendor/zurb/foundation/scss/components/pagination';
+@import 'vendor/zurb/foundation/scss/components/tooltip';
 
 // Containers
-@import '../../../vendor/zurb/foundation/scss/components/accordion';
-@import '../../../vendor/zurb/foundation/scss/components/media-object';
-@import '../../../vendor/zurb/foundation/scss/components/orbit';
-@import '../../../vendor/zurb/foundation/scss/components/responsive-embed';
-@import '../../../vendor/zurb/foundation/scss/components/tabs';
-@import '../../../vendor/zurb/foundation/scss/components/thumbnail';
+@import 'vendor/zurb/foundation/scss/components/accordion';
+@import 'vendor/zurb/foundation/scss/components/media-object';
+@import 'vendor/zurb/foundation/scss/components/orbit';
+@import 'vendor/zurb/foundation/scss/components/responsive-embed';
+@import 'vendor/zurb/foundation/scss/components/tabs';
+@import 'vendor/zurb/foundation/scss/components/thumbnail';
 // Menu-based containers
-@import '../../../vendor/zurb/foundation/scss/components/menu';
-@import '../../../vendor/zurb/foundation/scss/components/menu-icon';
-@import '../../../vendor/zurb/foundation/scss/components/accordion-menu';
-@import '../../../vendor/zurb/foundation/scss/components/drilldown';
-@import '../../../vendor/zurb/foundation/scss/components/dropdown-menu';
+@import 'vendor/zurb/foundation/scss/components/menu';
+@import 'vendor/zurb/foundation/scss/components/menu-icon';
+@import 'vendor/zurb/foundation/scss/components/accordion-menu';
+@import 'vendor/zurb/foundation/scss/components/drilldown';
+@import 'vendor/zurb/foundation/scss/components/dropdown-menu';
 
 // Layout components
-@import '../../../vendor/zurb/foundation/scss/components/off-canvas';
-@import '../../../vendor/zurb/foundation/scss/components/reveal';
-@import '../../../vendor/zurb/foundation/scss/components/sticky';
-@import '../../../vendor/zurb/foundation/scss/components/title-bar';
-@import '../../../vendor/zurb/foundation/scss/components/top-bar';
+@import 'vendor/zurb/foundation/scss/components/off-canvas';
+@import 'vendor/zurb/foundation/scss/components/reveal';
+@import 'vendor/zurb/foundation/scss/components/sticky';
+@import 'vendor/zurb/foundation/scss/components/title-bar';
+@import 'vendor/zurb/foundation/scss/components/top-bar';
 
 // Helpers
-@import '../../../vendor/zurb/foundation/scss/components/float';
-@import '../../../vendor/zurb/foundation/scss/components/flex';
-@import '../../../vendor/zurb/foundation/scss/components/visibility';
-@import '../../../vendor/zurb/foundation/scss/prototype/prototype';
+@import 'vendor/zurb/foundation/scss/components/float';
+@import 'vendor/zurb/foundation/scss/components/flex';
+@import 'vendor/zurb/foundation/scss/components/visibility';
+@import 'vendor/zurb/foundation/scss/prototype/prototype';
 
 // Fixes to vanilla Foundation
 @import './fixes';
