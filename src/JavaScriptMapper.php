@@ -19,6 +19,13 @@ class JavaScriptMapper
     protected $jqueryPath = 'vendor/components/jquery/jquery.js';
 
     /**
+     * Path to init JavaScript files for modules
+     *
+     * @var string
+     */
+    protected $initPath = 'vendor/riddlestone/brokkr-foundation-6/js/init';
+
+    /**
      * Map from Foundation components to required Foundation JavaScript plugins
      *
      * @var array
@@ -182,19 +189,24 @@ class JavaScriptMapper
     public function __invoke(array $foundationModules): array
     {
         $includes = [];
+        $inits = [];
         foreach ($foundationModules as $module) {
             if (isset($this->map[$module])) {
                 $includes = array_unique(array_merge($includes, $this->map[$module]));
             }
+            $initPath = $this->initPath . '/' . $module . '.js';
+            if (file_exists($initPath)) {
+                $inits[] = $initPath;
+            }
         }
         if ($includes) {
             array_unshift($includes, 'core');
-            return array_merge(
+            $includes = array_merge(
                 [$this->getJqueryPath()],
                 array_map([$this, 'applyPluginPath'], $includes)
             );
         }
-        return $includes;
+        return array_merge($includes, $inits);
     }
 
     /**
