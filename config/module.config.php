@@ -2,6 +2,8 @@
 
 namespace Riddlestone\Brokkr\Foundation6;
 
+use Laminas\ServiceManager\Factory\InvokableFactory;
+
 return [
     'console' => [
         'commands' => [
@@ -32,6 +34,10 @@ return [
             'form_submit' => View\Helper\FormSubmit::class,
             'formSubmit' => View\Helper\FormSubmit::class,
             'FormSubmit' => View\Helper\FormSubmit::class,
+        ],
+        'factories' => [
+            View\Helper\FormButton::class => InvokableFactory::class,
+            View\Helper\FormSubmit::class => InvokableFactory::class,
         ],
     ],
     'foundation' => [
