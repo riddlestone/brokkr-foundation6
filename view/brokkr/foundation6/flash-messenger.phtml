@@ -1,0 +1,25 @@
+<?php
+
+use Laminas\Mvc\Plugin\FlashMessenger\FlashMessenger;
+use Laminas\Mvc\Plugin\FlashMessenger\View\HelperTrait;
+use Laminas\View\Renderer\PhpRenderer;
+
+/**
+ * @var PhpRenderer|HelperTrait $this
+ */
+$this->flashMessenger()
+    ->setMessageOpenFormat('<div%s>')
+    ->setMessageSeparatorString('</div><div%s>')
+    ->setMessageCloseString('</div>');
+
+foreach ([
+    FlashMessenger::NAMESPACE_DEFAULT => 'primary',
+    FlashMessenger::NAMESPACE_INFO => 'primary',
+    FlashMessenger::NAMESPACE_SUCCESS => 'success',
+    FlashMessenger::NAMESPACE_WARNING => 'warning',
+    FlashMessenger::NAMESPACE_ERROR => 'alert',
+] as $namespace => $class) {
+    echo $this->flashMessenger()->render($namespace, ['callout', $class]);
+    echo $this->flashMessenger()->renderCurrent($namespace, ['callout', $class]);
+    $this->flashMessenger()->clearCurrentMessages($namespace);
+}

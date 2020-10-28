@@ -1,0 +1,13 @@
+<?php
+/**
+ * @var \Laminas\View\Renderer\PhpRenderer $this
+ * @var \Laminas\Navigation\Page\AbstractPage $page
+ */
+if (!$this->navigation()->accept($page)) { return ''; }
+?>
+<ul class="menu is-dropdown-submenu">
+    <?php foreach ($page as $subpage) : ?>
+        <?php if (!$this->navigation()->accept($subpage)) { continue; } ?>
+        <li><?php echo $this->navigation()->menu()->htmlify($subpage); ?></li>
+    <?php endforeach; ?>
+</ul>
