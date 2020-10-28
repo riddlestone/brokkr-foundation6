@@ -1,0 +1,17 @@
+<?php
+/**
+ * @var \Laminas\View\Renderer\PhpRenderer $this
+ * @var \Laminas\Navigation\AbstractContainer $container
+ */
+?>
+<ul class="dropdown menu" data-dropdown-menu data-alignment="left">
+    <?php foreach ($container as $page) : ?>
+        <?php if (!$this->navigation()->accept($page)) { continue; } ?>
+        <li<?php if (count($page)) : ?> class="is-dropdown-submenu-parent"<?php endif; ?>>
+            <?php echo $this->navigation()->menu()->htmlify($page); ?>
+            <?php if (count($page)) : ?>
+                <?php echo $this->partial('brokkr/foundation6/navigation/submenu', ['page' => $page]); ?>
+            <?php endif; ?>
+        </li>
+    <?php endforeach; ?>
+</ul>

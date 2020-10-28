@@ -1,0 +1,19 @@
+<?php
+/**
+ * @var \Laminas\View\Renderer\PhpRenderer $this
+ * @var \Laminas\Navigation\Page\AbstractPage[] $pages
+ */
+?>
+<nav aria-label="You are here:" role="navigation">
+    <ul class="breadcrumbs">
+        <?php foreach ($pages as $page) : ?>
+        <li>
+            <?php if ($page->isActive()) : ?>
+                <span class="show-for-sr">Current: </span><?php echo $page->getLabel(); ?>
+            <?php else : ?>
+                <a href="<?php echo $page->getHref(); ?>"><?php echo $page->getLabel(); ?></a>
+            <?php endif; ?>
+        </li>
+        <?php endforeach; ?>
+    </ul>
+</nav>
